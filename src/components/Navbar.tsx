@@ -35,6 +35,12 @@ export default function Navbar() {
               >
                 Contact
               </Link>
+              <Link
+                href="/booking"
+                className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md"
+              >
+                Booking
+              </Link>
             </div>
           </div>
         </div>

@@ -1,6 +1,11 @@
+"use client";
+
 import Link from "next/link";
+import { useMemo } from "react";
 
 const Footer = () => {
+  const currentYear = useMemo(() => new Date().getFullYear(), []);
+
   return (
     <footer className="bg-gray-100 py-8">
       <div className="container mx-auto px-4">
@@ -53,7 +58,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="border-t border-gray-200 mt-8 pt-8 text-center text-gray-600">
-          <p>© {new Date().getFullYear()} Company Name. All rights reserved.</p>
+          <p>© {currentYear} Company Name. All rights reserved.</p>
         </div>
       </div>
     </footer>
